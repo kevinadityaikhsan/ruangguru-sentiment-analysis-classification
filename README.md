@@ -37,4 +37,37 @@ This project performs sentiment analysis and builds a text classification model 
 - **Q:** Are there any potential issues to be aware of with this project?
 - **A:** Yes, as this project involves text classification in Bahasa Indonesia, there are limitations in the resources available. Specifically, the tools for normalization, stemming, and lexicon building are not as robust as those available for English. This could impact the accuracy and effectiveness of the analysis.
 
-# **[Project's Repository Link](https://github.com/kevinadityaikhsan/ruangguru-sentiment-analysis-classification)**
+## **Results**
+
+1. **TF-IDF with Multi-Layer Perceptron** ranked second, achieving an accuracy of 92.9%. This model required only 8 minutes for training, significantly faster than the other models.
+
+2. **TF-IDF with Dense Layer** ranked third, with a test accuracy of 92.4%. This model showed the highest risk of overfitting, evidenced by a 4.5% difference between training (96.8%) and test accuracy. Training took 18 minutes across 24 epochs, with each epoch averaging 45 seconds.  The model demonstrated low variance, as shown by the consistent loss and accuracy plots.
+
+3. **Word Embedding with Global Average Pooling Layer** ranked last, with an accuracy of 92.1%. This model exhibited a lower risk of overfitting than the previous model (TF-IDF with Dense Layer), with a 1.4% difference between training (93.5%) and test accuracy. Training took 19 minutes across 44 epochs, with each epoch averaging 26 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+
+4. **Word Embedding with Global Average Pooling Layer and Batch Normalization** achieved the highest accuracy of 93.9%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (94.1%) and test accuracy. Training took 26 minutes across 55 epochs, with each epoch averaging 28 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+
+## **Conclusion**
+
+Based on the results, the **Word Embedding with Global Average Pooling Layer and Batch Normalization** model is recommended for the following reasons:
+
+* **Highest Accuracy:** It achieves the highest accuracy of 93.9%.
+* **Lowest Risk of Overfitting:** It demonstrates the lowest risk of overfitting among all models, with only a 0.2% difference between training and test accuracy.
+
+While the model does exhibit high variance, this could potentially be addressed through techniques like regularization or using more training data.
+
+This project successfully developed a text classification model for categorizing YouTube comments from Ruangguru's Clash of Champions episodes. The model demonstrates the potential for automated comment analysis and sentiment identification, which can be a valuable tool for Ruangguru to understand and engage with its audience. While the model has achieved promising results, there are areas for improvement and considerations for future applications.
+
+## **Recommendations**
+
+1. **Address Class Imbalance:** The imbalanced lexicon used for sentiment analysis may lead to biased results, with a tendency to overestimate negative sentiment. Efforts should be made to balance the lexicon or explore alternative sentiment analysis techniques.
+
+2. **Enhance Preprocessing:** The effectiveness of text preprocessing can be further enhanced. Consider incorporating advanced techniques like spell checking, slang handling, and negation handling to improve the accuracy of feature extraction and model performance.
+
+3. **Explore Deep Learning Models:** The project currently utilizes machine learning models. Exploring deep learning architectures, such as recurrent neural networks (RNNs) or transformers, could potentially enhance the model's ability to capture contextual nuances in comments.
+
+4. **Expand Labeling Categories:** Consider expanding the labeling categories beyond sentiment. Incorporating categories like topic, relevance, or engagement level can provide Ruangguru with more comprehensive insights into their audience's feedback and preferences.
+
+5. **Continuous Model Improvement:** As new data becomes available, the model should be continuously retrained and updated to maintain its accuracy and adapt to evolving language patterns and trends in the comments.
+
+By implementing these recommendations, Ruangguru can further refine its comment analysis capabilities, gain deeper insights into audience sentiment and engagement, and leverage this information to enhance its content and community interaction strategies.
