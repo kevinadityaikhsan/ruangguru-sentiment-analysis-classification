@@ -14,7 +14,7 @@ This project performs sentiment analysis and builds a text classification model 
 
 **Credit:**
 
-1. Ruangguru YouTube
+1. [Ruangguru YouTube](https://www.youtube.com/@Ruangguru)
 2. normalized_term from [teguhary's GitHub](https://github.com/teguhary)
 3. MPStemmer() from [ariaghora's GitHub](https://github.com/ariaghora)
 4. Lexicon for sentiment analysis from [angelmetanosaa's GitHub](https://github.com/angelmetanosaa)
