@@ -25,7 +25,7 @@ This project performs sentiment analysis and builds a text classification model 
 - **Q:** Why not create different models for each episode?
 - **A:** Creating separate models for each episode would result in insufficient training data for each individual model, leading to poorer performance. Combining the data allows for a more robust model.
 2.
-- **Q:** Why use `normalized_term` from [teguhary's GitHub](https://github.com/teguhary)??
+- **Q:** Why use `normalized_term` from [teguhary's GitHub](https://github.com/teguhary)?
 - **A:** Teguhary's `normalized_term` function is chosen for its comprehensive normalization capabilities, exceeding other available options in my experience.
 3.
 - **Q:** Why use `MPStemmer()` instead of Sastrawi?
