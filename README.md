@@ -32,7 +32,7 @@ This project performs sentiment analysis and builds a text classification model 
 - **A:** Please refer to [ariaghora's GitHub](https://github.com/ariaghora) for a detailed comparison of `MPStemmer()` and Sastrawi, outlining the reasons for choosing `MPStemmer()` in this project.
 4.
 - **Q:** Why use the Lexicon for sentiment analysis from [angelmetanosaa's GitHub](https://github.com/angelmetanosaa)?
-- **A:** While not finding a superior alternative, this lexicon, taught by Dicoding Academy, was a readily available and suitable option for the sentiment analysis task.
+- **A:** While not finding a superior alternative, this lexicon, taught by [Dicoding Academy](https://www.dicoding.com/), was a readily available and suitable option for the sentiment analysis task.
 5.
 - **Q:** Could any potential problems arise from using [angelmetanosaa's GitHub](https://github.com/angelmetanosaa) lexicon for inference ?
 - **A:** Yes, there could be problems. The lexicon used in the model has an imbalanced distribution, with 3609 positive terms and 6607 negative terms. This imbalance could lead to an overestimation of negative sentiment when analyzing comments. However, if you don't have alternative options readily available, using this lexicon might still provide some valuable insights despite its limitations.
