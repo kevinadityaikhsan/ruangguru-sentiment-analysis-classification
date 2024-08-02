@@ -74,3 +74,7 @@ This project successfully developed a text classification model for categorizing
 5. **Continuous Model Improvement:** As new data becomes available, the model should be continuously retrained and updated to maintain its accuracy and adapt to evolving language patterns and trends in the comments.
 
 By implementing these recommendations, ruangguru can further refine its comment analysis capabilities, gain deeper insights into audience sentiment and engagement, and leverage this information to enhance its content and community interaction strategies.
+
+## **Test the Model to**
+
+To further validate the model's effectiveness, Model tested on a new set of comments from episode 4, which the model had not seen during training. Excitingly, the model maintained a remarkable 93.6% accuracy on this unseen data! This suggests the model has generalized well beyond its training data, a key factor for real-world deployment.
