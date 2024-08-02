@@ -1,20 +1,20 @@
-# **Sentiment Analysis and Classification of Ruangguru's Clash of Champions YouTube Comments**
+# **Sentiment Analysis and Classification of ruangguru's Clash of Champions YouTube Comments**
 
-This project performs sentiment analysis and builds a text classification model to categorize YouTube comments from Ruangguru Clash of Champions. We use sentiment analysis to initially label our unlabeled dataset, classifying comments as negative, neutral, or positive. The goal is to create a model that can accurately label new comments, potentially expanding beyond sentiment to categorize them based on topic, relevance, or engagement. This model could benefit Ruangguru by automating comment analysis and improving community engagement.
+This project performs sentiment analysis and builds a text classification model to categorize YouTube comments from ruangguru Clash of Champions. We use sentiment analysis to initially label our unlabeled dataset, classifying comments as negative, neutral, or positive. The goal is to create a model that can accurately label new comments, potentially expanding beyond sentiment to categorize them based on topic, relevance, or engagement. This model could benefit ruangguru by automating comment analysis and improving community engagement.
 
 **Key points:**
 
 * **Dataset:**
-  - YouTube comments extracted from Ruangguru's Clash of Champions episodes 1-3.
+  - YouTube comments extracted from ruangguru's Clash of Champions episodes 1-3.
   - Date of Collection: Tueday July 29, 2024 (9:26 AM)
   - Tool: youtube_comment_downloader from [egbertbouman's GitHub](https://github.com/egbertbouman)
 * **Labeling:** Initial labeling using sentiment analysis.
 * **Model:** Text classification model trained on sentiment-labeled comments.
-* **Potential:** Expand model beyond sentiment, benefit Ruangguru through automated comment analysis.
+* **Potential:** Expand model beyond sentiment, benefit ruangguru through automated comment analysis.
 
 **Credit:**
 
-1. [Ruangguru YouTube](https://www.youtube.com/@Ruangguru)
+1. [ruangguru YouTube](https://www.youtube.com/@Ruangguru)
 2. normalized_term from [teguhary's GitHub](https://github.com/teguhary)
 3. MPStemmer() from [ariaghora's GitHub](https://github.com/ariaghora)
 4. Lexicon for sentiment analysis from [angelmetanosaa's GitHub](https://github.com/angelmetanosaa)
@@ -25,7 +25,7 @@ This project performs sentiment analysis and builds a text classification model 
 - **Q:** Why not create different models for each episode?
 - **A:** Creating separate models for each episode would result in insufficient training data for each individual model, leading to poorer performance. Combining the data allows for a more robust model.
 2.
-- **Q:** Why use `normalized_term` from [teguhary's GitHub](https://github.com/teguhary)??
+- **Q:** Why use `normalized_term` from [teguhary's GitHub](https://github.com/teguhary)?
 - **A:** Teguhary's `normalized_term` function is chosen for its comprehensive normalization capabilities, exceeding other available options in my experience.
 3.
 - **Q:** Why use `MPStemmer()` instead of Sastrawi?
@@ -38,7 +38,7 @@ This project performs sentiment analysis and builds a text classification model 
 - **A:** Yes, there could be problems. The lexicon used in the model has an imbalanced distribution, with 3609 positive terms and 6607 negative terms. This imbalance could lead to an overestimation of negative sentiment when analyzing comments. However, if you don't have alternative options readily available, using this lexicon might still provide some valuable insights despite its limitations.
 6.
 - **Q:** Are there any potential issues to be aware of with this project?
-- **A:** Yes, as this project involves text classification in Bahasa Indonesia, there are limitations in the resources available. Specifically, the tools for normalization, stemming, and lexicon building are not as robust as those available for English. This could impact the accuracy and effectiveness of the analysis.
+- **A:** Yes, as this project involves text classification in bahasa Indonesia, there are limitations in the resources available. Specifically, the tools for normalization, stemming, and lexicon building are not as robust as those available for English. This could impact the accuracy and effectiveness of the analysis.
 
 ## **Results**
 
@@ -59,7 +59,7 @@ Based on the results, the **Word Embedding with Global Average Pooling Layer and
 
 While the model does exhibit high variance, this could potentially be addressed through techniques like regularization or using more training data.
 
-This project successfully developed a text classification model for categorizing YouTube comments from Ruangguru's Clash of Champions episodes. The model demonstrates the potential for automated comment analysis and sentiment identification, which can be a valuable tool for Ruangguru to understand and engage with its audience. While the model has achieved promising results, there are areas for improvement and considerations for future applications.
+This project successfully developed a text classification model for categorizing YouTube comments from ruangguru's Clash of Champions episodes. The model demonstrates the potential for automated comment analysis and sentiment identification, which can be a valuable tool for ruangguru to understand and engage with its audience. While the model has achieved promising results, there are areas for improvement and considerations for future applications.
 
 ## **Recommendations**
 
@@ -69,8 +69,8 @@ This project successfully developed a text classification model for categorizing
 
 3. **Explore Deep Learning Models:** The project currently utilizes machine learning models. Exploring deep learning architectures, such as recurrent neural networks (RNNs) or transformers, could potentially enhance the model's ability to capture contextual nuances in comments.
 
-4. **Expand Labeling Categories:** Consider expanding the labeling categories beyond sentiment. Incorporating categories like topic, relevance, or engagement level can provide Ruangguru with more comprehensive insights into their audience's feedback and preferences.
+4. **Expand Labeling Categories:** Consider expanding the labeling categories beyond sentiment. Incorporating categories like topic, relevance, or engagement level can provide ruangguru with more comprehensive insights into their audience's feedback and preferences.
 
 5. **Continuous Model Improvement:** As new data becomes available, the model should be continuously retrained and updated to maintain its accuracy and adapt to evolving language patterns and trends in the comments.
 
-By implementing these recommendations, Ruangguru can further refine its comment analysis capabilities, gain deeper insights into audience sentiment and engagement, and leverage this information to enhance its content and community interaction strategies.
+By implementing these recommendations, ruangguru can further refine its comment analysis capabilities, gain deeper insights into audience sentiment and engagement, and leverage this information to enhance its content and community interaction strategies.
