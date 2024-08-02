@@ -75,6 +75,6 @@ This project successfully developed a text classification model for categorizing
 
 By implementing these recommendations, ruangguru can further refine its comment analysis capabilities, gain deeper insights into audience sentiment and engagement, and leverage this information to enhance its content and community interaction strategies.
 
-## **Test the Model to**
+## **Test the Model with New Comments from Episode 4**
 
 To further validate the model's effectiveness, Model tested on a new set of comments from episode 4, which the model had not seen during training. Excitingly, the model maintained a remarkable 93.6% accuracy on this unseen data! This suggests the model has generalized well beyond its training data, a key factor for real-world deployment.
