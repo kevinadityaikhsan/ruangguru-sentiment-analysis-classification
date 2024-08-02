@@ -32,7 +32,7 @@ This project performs sentiment analysis and builds a text classification model 
 - **A:** Please refer to [ariaghora's GitHub](https://github.com/ariaghora) for a detailed comparison of `MPStemmer()` and Sastrawi, outlining the reasons for choosing `MPStemmer()` in this project.
 4.
 - **Q:** Why use the Lexicon for sentiment analysis from [angelmetanosaa's GitHub](https://github.com/angelmetanosaa)?
-- **A:** While not finding a superior alternative, this lexicon, taught by Dicoding Academy, was a readily available and suitable option for the sentiment analysis task.
+- **A:** While not finding a superior alternative, this lexicon, taught by [Dicoding Academy](https://www.dicoding.com/), was a readily available and suitable option for the sentiment analysis task.
 5.
 - **Q:** Could any potential problems arise from using [angelmetanosaa's GitHub](https://github.com/angelmetanosaa) lexicon for inference ?
 - **A:** Yes, there could be problems. The lexicon used in the model has an imbalanced distribution, with 3609 positive terms and 6607 negative terms. This imbalance could lead to an overestimation of negative sentiment when analyzing comments. However, if you don't have alternative options readily available, using this lexicon might still provide some valuable insights despite its limitations.
@@ -48,11 +48,11 @@ This project performs sentiment analysis and builds a text classification model 
 
 3. **Word Embedding with Global Average Pooling Layer** ranked last, with an accuracy of 90.3%. This model exhibited a lower risk of overfitting than the previous model (TF-IDF with Dense Layer), with a 1.2% difference between training (89.1%) and test accuracy. Training took 16 minutes across 29 epochs, with each epoch averaging 33 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
-4. **Word Embedding with Global Average Pooling Layer and Batch Normalization** achieved the highest accuracy of 93.8%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (93.6%) and test accuracy. Training took 31 minutes across 52 epochs, with each epoch averaging 36 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+4. **Word Embedding with Global Average Pooling Layer and Dense Layer** achieved the highest accuracy of 93.8%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (93.6%) and test accuracy. Training took 31 minutes across 52 epochs, with each epoch averaging 36 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
 ## **Conclusion**
 
-Based on the results, the **Word Embedding with Global Average Pooling Layer and Batch Normalization** model is recommended for the following reasons:
+Based on the results, the **Word Embedding with Global Average Pooling Layer and Dense Layer** model is recommended for the following reasons:
 
 * **Highest Accuracy:** It achieves the highest accuracy of 93.8%.
 * **Lowest Risk of Overfitting:** It demonstrates the lowest risk of overfitting among all models, with only a 0.2% difference between training and test accuracy.
