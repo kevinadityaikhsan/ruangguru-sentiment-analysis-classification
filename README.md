@@ -48,11 +48,11 @@ This project performs sentiment analysis and builds a text classification model 
 
 3. **Word Embedding with Global Average Pooling Layer** ranked last, with an accuracy of 90.3%. This model exhibited a lower risk of overfitting than the previous model (TF-IDF with Dense Layer), with a 1.2% difference between training (89.1%) and test accuracy. Training took 16 minutes across 29 epochs, with each epoch averaging 33 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
-4. **Word Embedding with Global Average Pooling Layer and Batch Normalization** achieved the highest accuracy of 93.8%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (93.6%) and test accuracy. Training took 31 minutes across 52 epochs, with each epoch averaging 36 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+4. **Word Embedding with Global Average Pooling Layer and Dense Layer** achieved the highest accuracy of 93.8%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (93.6%) and test accuracy. Training took 31 minutes across 52 epochs, with each epoch averaging 36 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
 ## **Conclusion**
 
-Based on the results, the **Word Embedding with Global Average Pooling Layer and Batch Normalization** model is recommended for the following reasons:
+Based on the results, the **Word Embedding with Global Average Pooling Layer and Dense Layer** model is recommended for the following reasons:
 
 * **Highest Accuracy:** It achieves the highest accuracy of 93.8%.
 * **Lowest Risk of Overfitting:** It demonstrates the lowest risk of overfitting among all models, with only a 0.2% difference between training and test accuracy.
