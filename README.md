@@ -39,19 +39,19 @@ This project performs sentiment analysis and builds a text classification model 
 
 ## **Results**
 
-1. **TF-IDF with Multi-Layer Perceptron** ranked second, achieving an accuracy of 92.9%. This model required only 8 minutes for training, significantly faster than the other models.
+1. **TF-IDF with Multi-Layer Perceptron** ranked second, achieving an accuracy of 92.7%. This model required only 12 minutes for training, faster than the other models.
 
-2. **TF-IDF with Dense Layer** ranked third, with a test accuracy of 92.4%. This model showed the highest risk of overfitting, evidenced by a 4.5% difference between training (96.8%) and test accuracy. Training took 18 minutes across 24 epochs, with each epoch averaging 45 seconds.  The model demonstrated low variance, as shown by the consistent loss and accuracy plots.
+2. **TF-IDF with Dense Layer** ranked third, with a test accuracy of 92.6%. This model showed the highest risk of overfitting, evidenced by a 4.5% difference between training (97.1%) and test accuracy. Training took 32 minutes across 25 epochs, with each epoch averaging 77 seconds.  The model demonstrated low variance, as shown by the consistent loss and accuracy plots.
 
-3. **Word Embedding with Global Average Pooling Layer** ranked last, with an accuracy of 92.1%. This model exhibited a lower risk of overfitting than the previous model (TF-IDF with Dense Layer), with a 1.4% difference between training (93.5%) and test accuracy. Training took 19 minutes across 44 epochs, with each epoch averaging 26 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+3. **Word Embedding with Global Average Pooling Layer** ranked last, with an accuracy of 90.3%. This model exhibited a lower risk of overfitting than the previous model (TF-IDF with Dense Layer), with a 1.2% difference between training (89.1%) and test accuracy. Training took 16 minutes across 29 epochs, with each epoch averaging 33 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
-4. **Word Embedding with Global Average Pooling Layer and Batch Normalization** achieved the highest accuracy of 93.9%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (94.1%) and test accuracy. Training took 26 minutes across 55 epochs, with each epoch averaging 28 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
+4. **Word Embedding with Global Average Pooling Layer and Batch Normalization** achieved the highest accuracy of 93.8%. This model demonstrated the lowest risk of overfitting among all models, with a 0.2% difference between training (93.6%) and test accuracy. Training took 31 minutes across 52 epochs, with each epoch averaging 36 seconds. The model showed high variance, indicated by fluctuations in the loss and accuracy plots.
 
 ## **Conclusion**
 
 Based on the results, the **Word Embedding with Global Average Pooling Layer and Batch Normalization** model is recommended for the following reasons:
 
-* **Highest Accuracy:** It achieves the highest accuracy of 93.9%.
+* **Highest Accuracy:** It achieves the highest accuracy of 93.8%.
 * **Lowest Risk of Overfitting:** It demonstrates the lowest risk of overfitting among all models, with only a 0.2% difference between training and test accuracy.
 
 While the model does exhibit high variance, this could potentially be addressed through techniques like regularization or using more training data.
