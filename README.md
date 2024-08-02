@@ -4,7 +4,10 @@ This project performs sentiment analysis and builds a text classification model 
 
 **Key points:**
 
-* **Dataset:** YouTube comments from Ruangguru Clash of Champions episodes 1-3.
+* **Dataset:**
+  - YouTube comments extracted from Ruangguru's Clash of Champions episodes 1-3.
+  - Date of Collection: Tueday July 29, 2024 (9:26 AM)
+  - Tool: youtube_comment_downloader from [egbertbouman's GitHub](https://github.com/egbertbouman)
 * **Labeling:** Initial labeling using sentiment analysis.
 * **Model:** Text classification model trained on sentiment-labeled comments.
 * **Potential:** Expand model beyond sentiment, benefit Ruangguru through automated comment analysis.
