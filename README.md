@@ -1,4 +1,4 @@
-# **YouTube Comments Sentiment Analysis and Text Classification**
+# **YouTube Comments Sentiment Analysis**
 
 This project performs sentiment analysis and builds a text classification model to categorize YouTube comments from ruangguru Clash of Champions. We use sentiment analysis to initially label our unlabeled dataset, classifying comments as negative, neutral, or positive. The goal is to create a model that can accurately label new comments, potentially expanding beyond sentiment to categorize them based on topic, relevance, or engagement. This model could benefit ruangguru by automating comment analysis and improving community engagement.
 
